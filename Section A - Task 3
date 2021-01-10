@@ -1,0 +1,29 @@
+Hi, the code that's responsible for moving the character is in the Script.js file, and it is a JavaScript code (written using jQuery). Since you want to move the character by
+pressing down a button, the code that moves it should reside in the keydown event handler. I realize that you have created a switch statement to increment or decreament the 
+character's position accordingly depending on the key pressed. However, you have not indicated the different cases that need to to switched. For example, a switch statement would
+look like this:
+switch (variable/value) {
+  case 1:
+    do something;
+    break;
+  case 2:
+    do something different;
+    break;
+  default:
+    do something totally different;
+}
+
+And, inside each "case" then you would have the code for that specific case (key pressed in your case). To asnwer your question of how do you prevent the moveable character from 
+moving out of screen's bounds, you first have to get the maximum height and width of your screen. Looking at your comments, you already have code snippets that will get maximum
+height and width of your screen. Then, for left movement which happens after pressing left key, you have to first check whether $('img').position().left is equal or greater than
+20 px because you're decrementing the left image property by 20px. You can do this using an IF statement. For right movement, you have to check whether the $('img').position().left
+is greater than the screen's maximum width minus 20px before incrementing the image's left property. You do the same for the UP and DOWN movements using $('img').position().top
+position property.
+
+Looking at your code, your switch statement is not properly implemented. And you miss the if statements that check your screen's bounds before incrementing/decrementing the 
+moveable character's position. 
+
+GENERAL COMMENTS
+1. It is always a good idea to use proper code indentation. Not only does it improve code readability, it also makes it easy for you debug your code. Your code in Script.js and
+Example.html files is not well indented. For example, statements following a "{" brace should be indented once more than the previous line's indentation for JavaScript code.
+2. Comments should be descriptive and always remove unnecessary/obsolete comments as they can cofuse you. 
