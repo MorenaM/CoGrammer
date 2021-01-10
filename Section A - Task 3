@@ -26,4 +26,4 @@ moveable character's position.
 GENERAL COMMENTS
 1. It is always a good idea to use proper code indentation. Not only does it improve code readability, it also makes it easy for you debug your code. Your code in Script.js and
 Example.html files is not well indented. For example, statements following a "{" brace should be indented once more than the previous line's indentation for JavaScript code.
-2. Comments should be descriptive and always remove unnecessary/obsolete comments as they can cofuse you. 
+2. Comments should be descriptive and to the point. Always remove unnecessary/obsolete comments as they can cause confusion. 
