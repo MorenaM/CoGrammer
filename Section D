@@ -1,0 +1,9 @@
+Space complexity is the amount of memory used by the algorithm. Thus, this includes memory used by variables, algorithm execution and program instruction. The memory usage
+while executing the algorithm includes instruction space, environmental stack and data space. Assuming we only consider data space as usual for determining space complexity,
+the following byte size assumptions are made because alignment may cause different size usage on different platforms. A boolean variable/value is 4 bytes, an integer variable/value
+is 4 bytes, characters or string elements are 2 bytes each. Since parameters are passed by value in javascript, the input parameter string memory requirement will be 2xn bytes
+where n is the number of characters in the string. The local variables all have constant memory requirement and are independent of input data. Thus the space complexity is
+(2xn + A) where A is the constant variables memory. The algorithm has linear space complexity. Therefore it has O(n) space complexity.
+
+Time complexity is the number of operations the algorithm performs to complete it's task. The given algorithm traverses through each character in the string, therefore the time it
+takes to complete the task will increase as the size of the input data, the string paramater size. This means the algorithm is O(n) in time complexity.
